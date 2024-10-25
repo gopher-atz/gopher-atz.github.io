@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(122deg, var(--main-bg-color) 0%, #1d2417 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: var(--main-text-color);
+    letter-spacing: .05em;
+    font-size: .95rem;
+    color: white;
+    background: url(http://4klang.untergrund.net/background.jpg) no-repeat fixed bottom right;
+}
+
+#container  
+{
+position: relative; 
+width:802px; 
+height: auto;
+background-color: #fff;
+border-left: 2px solid #555;
+border-right: 2px solid #555; 
+margin-left: 10%;
+text-align:left;
+z-index:1;
+background-color: #000;
+filter:Alpha(opacity=85);
+-moz-opacity:0.85;
+-khtml-opacity:0.85;
+opacity:0.85;
+} 
+#container_transparent
+{
+position: relative; 
+width: 800px;
+height: auto;
+border-left: 1px solid #999;
+border-right: 1px solid #999;
+margin-left: 0;
+text-align:left;
+z-index:2; 
+background-color: #000;
+background:transparent;
+}
+.content
+{
+position: relative;
+margin: 0px 10px 30px 10px;
+
+}
+h1
+{
+margin: 0px 10px 30px 10px;  
+font-size: 120%;
+}
+h2
+{
+margin: 10px 10px 15px 10px;
+font-size: 100%;
+}
+p 
+{
+margin: 0px 10px 30px 10px;
+}
+a
+{
+text-decoration: none;
+}
+a:link
+{
+color: #f62;
+}
+a:visited
+{
+color: #f62;
+}
+
+a:active
+{
+color: #f62;
+}
+
+a:hover
+{
+color: #777;
+}

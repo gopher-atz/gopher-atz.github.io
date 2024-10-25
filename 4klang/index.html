@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website"/>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="verify-v1" content="2qULYcTKkLWpttxpGHPof6YhtWx2L8JzM7dQ8yeP7Z0=" >
+<meta name="description" content="Homepage of the 4klang vst, a modular software synthesizer package intended to easily produce music for 4k/8k intros.">
+<meta name="keywords" content="4klang, alcatraz, gopher, Dominik Ries, pOWL, Paul Kraus, breakpoint, evoke, computerparty, demoscene, demo, scene, 4k, 8k, vst, vsti">
+<meta name="language" content="en">
+<meta name="robots" content="index,follow">
+<meta name="copyright" content="Dominik Ries, Paul Kraus">
+<meta name="distribution" content="global">
+
+<title>4klang.untergrund.net (legacy)</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<header>
+    <nav>
+        <a href="../index.html">Productions</a>
+        <a href="../aboutme.html">About Me</a>
+        <a href="index.html">4klang.untergrund.net (legacy)</a>
+    </nav>
+</header>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+<div id="container">
+	<div id="container_transparent">
+
+		<div class="content"><br><h1><font color="#ff6020">4klang</font> - Alcatraz Software Synthesizer</h1>
+		</div>
+
+		<div class="content"><hr></div>
+
+		<div class="content">
+			<h2>Brief</h2>
+			<p>4klang is a modular software synthesizer package intended to easily produce music for 4k intros.
+			It consists of a VSTi plugin   example songs/instruments as well as an example C   project showing how to include it in your code.
+			Or if you dare to compile it yourself also the source code for the synth core and VSTi plugin.
+			4klang was developed by Dominik &#180;<a href="mailto:dominik.ries@gmail.com">Gopher</a>&#180; Ries and
+			Paul &#180;<a href="mailto:paul.c.kraus@gmail.com">pOWL</a>&#180; Kraus of <a href="https://www.pouet.net/groups.php?which=195">Alcatraz</a>.
+			<a href="http://www.pouet.net/prod.php?which=53937"></a></p>
+		</div>
+
+		<div class="content">
+			<h2>General information and usage</h2>
+			<p>You may freely use 4klang in your productions, but before starting to use 4klang please refer to the readme.txt in the package for some general usage advices.
+			For some in depth information on how 4klang works and its history up to the first public release please refer to <a href="http://www.pouet.net/prod.php?which=55734">Zine#14</a>.</p>
+		</div>
+
+		<div class="content">
+			<h2>History</h2>
+			<ul>
+			<li>Final
+					<ul>
+						<li>In addition to the github release of 64klang, it might be a good idea to do the same for 4klang.</li>
+						<li>That way other people can contribute their changes or fixes as well.</li>
+						<li>Find the link in the <a href="#downloads">downloads</a> section</li>
+					</ul>
+				</li>
+			
+			
+				<li>22-Oct-2018: Version 3.2.2
+					<ul>
+						<li>Legacy fix for global sections save/load memory out of bounds access</li>
+						<li>Fixed delay index fuckup during export when skipping instruments with delay mode "note sync"</li>
+					</ul>
+				</li>
+				<li>04-Nov-2015: Version 3.11 (experimental 8k release, will be slightly bigger than 3.0.1 exports)
+					<ul>
+						<li>added a seond plugin called 8klang which acts like an 16 channel addon to the normal 4klang plugin</li>
+						<li>extension to 64 slots for each instrument</li>
+						<li>stereo flags for some nodes where possible (oscillator, filter, distortion)</li>
+						<li>some additions to the arithmetic unit</li>
+						<li>instrument link option for identical instruments to enable simultaneous changes on order and values in all of the linked instruments</li>
+						<li>new file format to enable the new features</li>
+						<li><a href="https://www.youtube.com/watch?v=wP__g_9FT4M">Also check out this nice tutorial by Wayfinder</a></li>
+					</ul>
+				</li>
+				<li>18-Jun-2013: Version 3.0.1 (bugfix release)
+					<ul>
+						<li>fixed the bugs mentioned <a href="http://pouet.net/topic.php?which=8811">here</a>. Thanks to yzi and neoman</li>
+						<li>changed output method so the vsti now spits out the .asm and .inc files including the synth, player and song for direct compilation to your project rather than the previous linking of an .obj file</li>
+						<li>2 new example songs/patches:</li>
+						<li><a href="http://pouet.net/prod.php?which=59687">enlighten</a> soundtrack. (thank you xTr1m/<a href="http://www.blu-flame.org/">blu-flame</a>)</li>
+						<li><a href="http://pouet.net/prod.php?which=59965">sundowner</a> soundtrack. (thank you Punqtured/<a href="http://pouet.net/groups.php?which=1292">Fnuque</a>)</li>
+					</ul>
+				</li>
+				<li>23-Feb-2012: Version 3.0 (source release)
+					<ul>
+						<li>added a new unit to load an arbitrary signal from -1..1 to the stack. also contains a modulation target for further sound signal tinkering</li>
+						<li>added modulation targets for all delay/reverb parameters (except delay time, since that is a constant internally)</li>
+						<li>due to the above 2 points a changed file format. actually without using those its still the same. check the readme for more info</li>
+						<li>added <a href="http://www.pouet.net/prod.php?which=55736">light rythm</a> soundtrack.</li>
+						<li>and ... *drumroll* ... the complete source for 4klang and the VSTI plugin. now go make your own changes :)</li>
+					</ul>
+				</li>
+				<li>24-Mar-2011: Version 2.8 (minor bugfixes)
+					<ul>
+						<li>a few synth features were not correctly detected/exported depending on certain instrument configurations. thank you Subi/Desire for reporting and providing test data</li>
+					</ul>
+				</li>
+				<li>15-May-2010: Version 2.7 (quality example updates)
+					<ul>
+						<li>Nothing new on the plugin itself, but some 4klang users were kind enough to share their great songs:</li>
+						<li><a href="http://www.pouet.net/prod.php?which=53604">dollop</a> soundtrack. thank you melwyn for providing that</li>
+						<li><a href="http://www.pouet.net/prod.php?which=54529">ergon</a> soundtrack. thank you ulrick/<a href="http://www.frequency.fr">FRequency</a></li>
+						<li><a href="http://www.pouet.net/prod.php?which=54956">baghdad</a> soundtrack. thanks again melwyn</li>
+					</ul>
+				</li>
+				<li>06-Oct-2009: Version 2.7
+					<ul>
+						<li>new option to export the object in OSX macho format (hopefully :) and to specify note quantization for export)</li>
+						<li>oscillator now has additional gate waveform</li>
+						<li>arithmetic supports loading the normalized (0..1) midi note value on the stack</li>
+						<li>added a few more instrument presets</li>
+						<li>introducing a new file format version. older file versions will be autoconverted</li>
+						<li>some minor size optimizations</li>
+					</ul>
+				</li>
+				<li>06-Aug-2009: Version 2.6
+					<ul>
+						<li>new option to export the object in linux elf format (hello <a href="http://www.linuxdemos.org">linuxdemos.org</a>)</li>
+						<li>compatibility option to force the player to output 16bit integer instead of 32bit float samples</li>
+						<li>moved 4klang function declarations into 4klang.h plus some defines for the above new features</li>
+						<li>adjusted examples, added linux example code (big thanks to las/<a href="http://www.mercury-domination.net/">mercury</a>)</li>
+					</ul>
+				</li>
+				<li>28-Jul-2009: Version 2.5
+					<ul>
+						<li>recording now additionally spits out 4klang.h with some useful defines for the song</li>
+						<li>added modulation targets for envelope (attack,decay,release)</li>
+						<li>added optional note buffer to access the note values of each instrument (similar to envelope buffer)</li>
+						<li>adjusted example project, changed threaded version for smaller size (thank you xTr1m/<a href="http://www.blu-flame.org/">blu-flame</a>)</li>
+						<li>added wav writer project</li>
+					</ul>
+				</li>
+				<li>23-Jun-2009: Version 2.4
+					<ul>
+						<li>chorus / flanger added</li>
+						<li>several bug fixes</li>
+					</ul>
+				</li>
+				<li>29-Mar-2009: Version 2.3</li>
+			</ul>
+		</div>
+
+		<div class="content">
+			<h2 id="downloads">Download</h2>
+			<p>GitHub Source <a href="https://github.com/gopher-atz/4klang">here</a> (Master branch based on version 3.2.2)</br>
+			Latest 8k Version (V3.11,  VSTi source).<a href="download/3.11/4klang_release.zip">&nbsp;Download</a>&nbsp;&nbsp;&nbsp;</br>
+			Latest 4k Version (V3.2.2, VSTi examples source).<a href="download/3.2.2/4klang_release.zip">&nbsp;Download</a>&nbsp;&nbsp;&nbsp;Find previous versions <a href="download">here</a>.</p>
+		</div>
+
+		<div class="content">
+			<h2>Support / Feedback</h2>
+			<p>You can help improving 4klang by either:</p>
+			<ul>
+				<li>giving us general feedback about 4klang, improvement ideas and so on. Please post to <a href="http://www.pouet.net/prod.php?which=53398">pouet.net</a></li>
+				<li>providing songs, patches and instruments which we can include into the package as examples.</li>
+				<li>reporting bugs and problems.</li>
+				<li>buying us some beers at the next party :)</li>
+				<li>and from version 3.0 on by adding interesting things/optimizations in the source and feeding it back to the public (if you want)</li>
+			</ul>
+		</div>
+
+		<div class="content">&nbsp;</div>
+
+		<div class="content">
+			<p>Gopher & pOWL / Alcatraz 2012 - <a href="mailto:atz4klang@untergrund.net?subject=4klang Support/Feedback">atz4klang@untergrund.net</a></p>
+		</div>
+
+		<div class="content">&nbsp;</div>
+
+	</div>
+</div>
